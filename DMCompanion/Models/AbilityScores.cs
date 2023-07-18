@@ -2,11 +2,11 @@ using System.Collections.Generic;
 
 namespace DMCompanion.Models{
     public class AbilityScores{
-        int strength {get; set;}
-        int dexterety {get; set;}
-        int constitution {get; set;}
-        int intelligence {get; set;}
-        int wisdom {get; set;}
-        int charisma {get; set;}
+        int Strength {get; set;}
+        int Dexterety {get; set;}
+        int Constitution {get; set;}
+        int Intelligence {get; set;}
+        int Wisdom {get; set;}
+        int Charisma {get; set;}
     }
 }
