@@ -5,5 +5,5 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="DMCompanion.MainWindow"
         Title="DMCompanion">
-    Welcome to Avalonia!
+    Welcome to Avalonia! Need to make an edit to get my stuff synced.
 </Window>
