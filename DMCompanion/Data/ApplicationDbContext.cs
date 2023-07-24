@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using System;
+using DMCompanion.Models;
 
 namespace DMCompanion.Data{
     public class ApplicationDBContext : DbContext{
@@ -9,6 +10,13 @@ namespace DMCompanion.Data{
         public DbSet<DMCompanion.Models.tag> Tags {get; set;} = null!;
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             optionsBuilder.UseMySql("server=localhost;user=root;password=Mieguele1;database=DnD", new MySqlServerVersion(new Version(8, 0, 33)));
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+        modelBuilder.Entity<Creature>().OwnsOne(c=>c.AbilityScores);
+        
+        }
+
+
             
 
 
